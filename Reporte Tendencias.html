@@ -7,11 +7,25 @@
     <title>Reporte de pizza - Documento 2</title>
     <link rel="stylesheet" href="reportes TDM.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="light">
     <header>
         <h1>Reporte de pizza</h1>
+        <div class="topnav" id="myTopnav">
+            <a href="Lading Empleados.html" class="active">Inicio</a>
+            <a href="Registros Reservas.html">Reservas</a>
+            <a href="Registros Suministro.html">Suministros</a>
+            <a href="existencias.html">Existencias</a>
+            <a href="Informacion Proveedor.html">Proveedores</a>
+            <a href="Pedidos Proveedor.html">Pedidos</a>
+            <a href="Reporte Dia-Mes.html">Estadisticas</a>
+            <a href="ordenes.html">Ordenes</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
     </header>
     <div class="container">
         <main class="ventas">
@@ -186,6 +200,16 @@
     <footer>
         <p>&copy; La mejor pizzería paisa</p>
     </footer>
+    <script>
+        function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+      }
+      </script>
 </body>
 
 </html>
