@@ -1,0 +1,108 @@
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2020/03/21/02/26/pizza-4952508_960_720.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #070707;
+    display: grid;
+    margin: 0%;
+    
+}
+
+h1, h2 {
+    color: black;
+    text-align: center;
+}
+
+th, h1 {
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+}
+
+h1{
+    height: 10vh;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+tr td {
+    background-color: #f2f2f2;
+}
+
+.container{
+    
+    width: 450px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 3%;
+    
+}
+
+.container > details{
+    background-color: rgba(255, 255, 255, 0.87);
+    border: 1px solid rgb(52, 194, 24);
+    border-radius: 15px;
+    flex-basis: 100%;
+}
+
+.container > details > summary{
+    text-align: center;
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+
+table{
+    width: 350px;
+    margin: 0 auto;
+}
+
+table,
+th,
+tr,
+td {
+    border: 3px solid rgb(77, 74, 74);
+    text-align: center;
+    padding: 2px;
+}
+
+main{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+}
+
+details  summary { list-style: none } 
+
+@media screen and (max-width: 425px) {
+    table{
+        width: 95vw;
+    }
+
+    .container > details{
+        width: 98vw;
+    }
+    
+}
+

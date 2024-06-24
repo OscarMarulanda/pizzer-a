@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de pizza - Documento 1</title>
+    <link rel="stylesheet" href="reportes TDM.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+<body class="light">
+    <header>
+        <h1>Reporte de pizza</h1>
+    </header>
+    <div class="container">
+        <main class="ventas">
+            <section class="resumen">
+                <div class="ventas-totales"><h3>Ventas totales:</h3></div>
+                <div class="valor-promedio-orden"><h3>Valor promedio por orden:</h3></div>
+                <div class="total-pizzas-vendidas"><h3>Total de pizzas vendidas:</h3></div>
+                <div class="total-ordenes"><h3>Número total de órdenes:</h3></div>
+                <div class="promedio-porciones-orden"><h3>Promedio de porciones por orden:</h3></div>
+            </section>
+            <section class="stats2">
+                <div class="ventas">
+                    <canvas id="myChart1"></canvas>
+                    <script>
+                        var xValues = ["Vie", "Sab", "Dom"];
+                        var yValues = [36, 45, 21];
+
+                        new Chart("myChart1", {
+                            type: "line",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    fill: false,
+                                    lineTension: 0,
+                                    backgroundColor: "rgba(0,0,255,1.0)",
+                                    borderColor: "rgba(0,0,255,0.1)",
+                                    data: yValues
+                                }]
+                            },
+                            options: {
+                                legend: { display: false },
+                                scales: {
+                                    yAxes: [{ ticks: { min: 6, max: 50 } }],
+                                },
+                                title: {
+                                    display: true,
+                                    text: "Ventas por día"
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+                <div class="cantidad">
+                    <canvas id="myChart2"></canvas>
+                    <script>
+                        var xValues = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+                        var yValues = [500, 450, 398, 430, 389, 421, 351, 345, 289, 468, 410, 436];
+                        var barColors = ["red", "green", "blue", "orange", "brown", "green,", "blue", "black", "red", "purple", "yellow", "blue"];
+
+                        new Chart("myChart2", {
+                            type: "bar",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    backgroundColor: barColors,
+                                    data: yValues
+                                }]
+                            },
+                            options: {
+                                legend: { display: false },
+                                title: {
+                                    display: true,
+                                    text: "Ventas por mes"
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; La mejor pizzería paisa</p>
+    </footer>
+</body>
+
+</html>

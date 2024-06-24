@@ -1,0 +1,346 @@
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2020/03/21/02/26/pizza-4952508_960_720.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #000000;
+    display: grid;
+}
+
+.container,
+.container2 {
+    width: 80%;
+    max-width: 600px;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"],
+.form-group input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-group button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-group button:hover {
+    background-color: #45a049;
+}
+
+h1,
+h2 {
+    color: black;
+    text-align: center;
+}
+
+label {
+    color: black;
+    margin-left: 40px;
+}
+
+.input-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.ingr-cantidad {
+    margin: 30px 10px 30px 0px;
+    padding: 20px 10px 20px 0;
+    border-radius: 5px;
+}
+
+.agr-ingr {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 30px 40px;
+}
+
+option {
+    color: black;
+    padding-left: 50px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: black;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #000000;
+}
+
+th {
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.form-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    left: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container textarea {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: flex;
+    position: relative;
+    left: 15%;
+}
+
+.form-container button {
+    background-color: #4CAF50;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+.roundbutton {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.indiv {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000000;
+}
+
+.btn-guardar {
+    background-color: #4CAF50;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+    color: black;
+    border: 2px solid #1889af;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.label {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+}
+
+#container2 {
+    max-width: 60%;
+}
+
+#ImgS {
+    max-width: 100%;
+    height: auto;
+}
+
+.existencias {
+    border: #000000;
+    margin-top: 2vh;
+}
+
+.existencias th {
+    background-color: #4CAF50;
+}
+
+.existencias tr {
+    background-color: #ccc;
+}
+
+.exis {
+    color: #ebf0eb;
+}
+
+header {
+    margin: 0;
+    display: block;
+    width: 100%;
+    background-color: #239227;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+
+    .container,
+    .container2 {
+        width: 90%;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"],
+    .form-group input[type="email"],
+    .form-group input[type="number"] {
+        width: 100%;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="number"],
+    .form-container textarea {
+        width: 100%;
+        left: 0;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    button,
+    .button-group button {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container,
+    .container2 {
+        width: 100%;
+        margin: 20px;
+        padding: 20px 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    button,
+    .button-group button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="number"],
+    .form-container textarea {
+        width: 100%;
+        left: 0;
+        padding: 6px;
+    }
+}

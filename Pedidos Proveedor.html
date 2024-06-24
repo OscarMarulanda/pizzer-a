@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PedidosProveedor</title>
+    <link rel="stylesheet" href="Pedidos Proveedores.css">
+    <script src="Scp Pedidos Proveedor.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="pedido">Pedidos Proveedor</h1>
+    </header>
+    <div class="container">
+        <h1>Ingresar pedido</h1>
+        <form action="" method="get">
+            <div class="input-item">
+                <label for="proveedor">Proveedor:</label><br>
+                <input type="text" id="proveedor" name="proveedor"><br>
+            </div>
+            <div class="ingr-cantidad" id="agr">
+                <div class="indiv">
+                    <div class="input-item">
+                        <label for="ingrediente">Ingrediente:</label><br>
+                        <input type="text" id="ingrediente" name="ingrediente"><br>
+                    </div>
+                    <div class="input-item">
+                        <label for="cantidad">Cantidad:</label><br>
+                        <input type="number" id="cantidad" name="cantidad">
+                    </div>
+                </div>
+            </div>
+            <div class="agr-ingr">
+                <button type="button" class="roundbutton" onclick="myFunction()"> + </button>
+                <p>Agregar nuevo ingrediente</p>
+            </div>
+            <button type="submit" class="btn-guardar">Proveedores</button>
+            <button type="submit" class="btn-guardar">Pedir</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy;La mejor pizzería paisa</p>
+    </footer>
+</body>
+</html>

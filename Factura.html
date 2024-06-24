@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmar Reserva</title>
+    <link rel="stylesheet" href="Stile.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Factura</h1>
+    </header>
+    <div class="container">
+      <h2>Su reserva</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Sabor de pizza</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hawaiana</td>
+            <td>1</td>
+            <td>13000</td>
+          </tr>
+          <tr>
+            <td>Ranchera</td>
+            <td>1</td>
+            <td>13000</td>
+          </tr>
+          <tr>
+            <td colspan="2"><strong>TOTAL</strong></td>
+            <td><strong>26000</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Sus datos para reclamar su pizza</h2>
+      <table>
+        <tr>
+          <td>Nombre</td>
+          <td>Oscar Marulanda</td>
+        </tr>
+        <tr>
+          <td>Teléfono</td>
+          <td>3012864379</td>
+        </tr>
+        <tr>
+          <td>Fecha</td>
+          <td>5 de abril</td>
+        </tr>
+        <tr>
+          <td>Hora</td>
+          <td>7:00pm</td>
+        </tr>
+      </table>
+      <h2>Escoja su método de pago</h2>
+      <div class="buttons">
+        <button
+          onclick="alert('Esto llevara a otra que pida los datos correspondientes para la transferencia de Nequi.')"
+        >
+          Nequi
+        </button>
+        <button
+          onclick="alert('Esto llevara a otra que pida los datos correspondientes para la transferencia de Daviplata.')"
+        >
+          Daviplata
+        </button>
+        <button
+          onclick="alert('Esto llevara a otra que pida los datos correspondientes para la transferencia de PSE.')"
+        >
+          PSE
+        </button>
+      </div>
+      <h2>Hacer reserva</h2>
+      <div class="buttons">
+        <button onclick="window.location.href='Comprobante.html'">
+            Confirmar y Generar Comprobante
+        </button>
+    </div>
+    </div>
+    <footer>La mejor pizzería paisa</footer>
+  </body>
+</html>

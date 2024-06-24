@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Proveedor 1",
+        "product": "Tomates",
+        "quantity": 100,
+        "contact": "contacto@proveedor1.com"
+    },
+    {
+        "id": 2,
+        "name": "Proveedor 2",
+        "product": "Queso",
+        "quantity": 50,
+        "contact": "contacto@proveedor2.com"
+    }
+]

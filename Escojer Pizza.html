@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Paisa</title>
+    <link rel="stylesheet" href="Escojer Pizza.css">
+</head>
+<body>
+    <header>
+        <h1>Escojer Pizza</h1>
+    </header>
+    <div class="container">
+        <h2 id="titulo-container1">Escoger pizza</h2>
+        <div class="contain-h">
+            <div class="pickup">
+                <label class="label" for="pickup-time">¿Cuándo quiere recoger su pizza?</label>
+                <select id="pickup-time" name="pickup-time">
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="12:30 PM">12:30 PM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="1:30 PM">1:30 PM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="2:30 PM">2:30 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                    <option value="3:30 PM">3:30 PM</option>
+                    <option value="4:00 PM">4:00 PM</option>
+                    <option value="4:30 PM">4:30 PM</option>
+                    <option value="5:00 PM">5:00 PM</option>
+                </select>
+
+             </div>
+            <br><br>
+            <div class="ingr-cantidad" id="agr">
+                <h3 class="title-ingr" for="pizza-flavor" >Escoja sus porciones:</h3>
+
+                <section class="seccion-igr">
+                <div class="input-item" id="input-item">
+                    <div class="img-pizza"><img class="img-pizzar" src="./Imagenes/Carne.jpeg" alt=""></div>
+                    <div class="PizzasLOG"  id="pizzaslog">
+                        <p class="label" id="label" for="pizza-flavor-CarneT">PizzaCarneTradicional</p>
+                        <input type="number" id="pizza-flavor-CarneT" name="pizza-flavor-CarneT" min="0" max="8">
+                    </div>
+                </div>
+                
+                 
+                <div class="input-item" id="input-item">
+                    <div class="img-pizza"><img class="img-pizzar" src="./Imagenes/Champiñon.jpeg" alt=""></div>
+                    <div class="PizzasLOG" id="pizzaslog">
+                        <p class="label" id="label" for="pizza-flavor-Champiñon">PizzaChampiñones</p>
+                        <input type="number" id="pizza-flavor-Champiñon" name="pizza-flavor-Champiñon" min="0" max="8">
+                    </div>
+                </div>
+                <div class="input-item" id="input-item">
+                    <div class="img-pizza"><img class="img-pizzar" src="./Imagenes/hawaiana.jpg" alt=""></div>
+                    <div class="PizzasLOG" id="pizzaslog">
+                        <p class="label"  for="pizza-flavor-Hawaiana">PizzaHawaiana</p>
+                        <input type="number" id="pizza-flavor-Hawaiana" name="pizza-flavor-Hawaiana" min="0" max="8">
+                    </div>
+                </div>
+                </section>
+                <section class="seccion-igr">
+                
+                <div class="input-item">
+                    <div class="img-pizza"><img class="img-pizzar" src="./Imagenes/CarneBBQ.jpeg" alt=""></div>
+                    <div class="PizzasLOG" id="pizzaslog2">
+                        <p class="label"  for="pizza-flavor-CarneB">PizzaCarneBBQ</p>
+                        <input type="number" id="pizza-flavor-CarneB" name="pizza-flavor-CarneB" min="0" max="8">
+                    </div>
+                </div>
+                <div class="input-item">
+                    <div class="img-pizza"><img class="img-pizzar" src="./Imagenes/Paisa.jpeg" alt=""></div>
+                    <div class="PizzasLOG" id="pizzaslog2">
+                        <p class="label"  for="pizza-flavor-Paisa">PizzaPaisa</p>
+                        <input type="number" id="pizza-flavor-Paisa" name="pizza-flavor-Paisa" min="0" max="8">
+                    </div>
+                </div>
+                <div class="input-item">
+                    <div class="img-pizza"><img class="img-pizzar" src="./Imagenes/Maduro.jpg" alt=""></div>
+                    <div class="PizzasLOG" id="pizzaslog2">
+                        <p class="label"  for="pizza-flavor-Maduro">PizzaMaduro</p>
+                        <input type="number" id="pizza-flavor-Maduro" name="pizza-flavor-Maduro" min="0" max="8">
+                    </div>
+                </div>
+                </section>
+                <section class="seccion-igr">
+                <div class="input-item">
+                    <div class="img-pizza"><img class="img-pizzar" src="./Imagenes/tropical.jpeg" alt=""></div>
+                    <div class="PizzasLOG" id="pizzaslog3">
+                        <p class="label"  for="pizza-flavor-Tropical">PizzaTropical</p>
+                        <input type="number" id="pizza-flavor-Tropical" name="pizza-flavor-Tropical" min="0" max="8">
+                    </div>
+                </div>
+                <div class="input-item">
+                    <div class="img-pizza"><img class="img-pizzar" src="./Imagenes/mangotocineta.jpg" alt=""></div>
+                    <div class="PizzasLOG" id="pizzaslog3">
+                        <p class="label" id="label" for="pizza-flavor-MTocineta">PizzaMangoTocineta</p>
+                        <input type="number" id="pizza-flavor-MTocineta" name="pizza-flavor-MTocineta" min="0" max="8">
+                    </div>
+                </div>
+                <div class="input-item">
+                    <div class="img-pizza"><img class="img-pizzar" src="./Imagenes/Mexicana.jpg" alt=""></div>
+                    <div class="PizzasLOG" id="pizzaslog3">
+                        <p class="label"  for="pizza-flavor-Mexicana">PizzaMexicana</p>
+                        <input type="number" id="pizza-flavor-Mexicana" name="pizza-flavor-Mexicana" min="0" max="8">
+                    </div>
+                </div>
+               </section>
+            </div>
+            <form  class="formulario" action="Factura.html">
+                <button type="submit" >Continuar</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;La mejor pizzería paisa</p>
+    </footer>
+</body>
+</html>

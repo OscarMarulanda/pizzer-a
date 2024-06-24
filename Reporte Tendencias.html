@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de pizza - Documento 2</title>
+    <link rel="stylesheet" href="reportes TDM.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+<body class="light">
+    <header>
+        <h1>Reporte de pizza</h1>
+    </header>
+    <div class="container">
+        <main class="ventas">
+            <section class="resumen">
+                <div class="ventas-totales"><h3>Ventas totales:</h3></div>
+                <div class="valor-promedio-orden"><h3>Valor promedio por orden:</h3></div>
+                <div class="total-pizzas-vendidas"><h3>Total de pizzas vendidas:</h3></div>
+                <div class="total-ordenes"><h3>Número total de órdenes:</h3></div>
+                <div class="promedio-porciones-orden"><h3>Promedio de porciones por orden:</h3></div>
+            </section>
+            <section class="stats">
+                <div class="ventas">
+                    <canvas id="myChart3"></canvas>
+                    <script>
+                        Chart.defaults.global.defaultFontColor = "#000";
+                        var xValues = ["Lasaña", "Pepperoni", "Mexicana", "Carnes", "Pollo"];
+                        var yValues = [1330000, 1170000, 1105000, 1080000, 1062500];
+                        var barColors = ["red", "green", "blue", "orange", "brown"];
+
+                        new Chart("myChart3", {
+                            type: "bar",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    backgroundColor: barColors,
+                                    data: yValues,
+                                }]
+                            },
+                            options: {
+                                legend: { display: false },
+                                title: {
+                                    display: true,
+                                    text: "Top 5 pizzas por ventas"
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+                <div class="cantidad">
+                    <canvas id="myChart4"></canvas>
+                    <script>
+                        var xValues = ["Lasaña", "Carnes", "Pepperoni", "Mexicana", "Pollo"];
+                        var yValues = [95, 90, 90, 85, 85];
+                        var barColors = ["red", "green", "blue", "orange", "brown"];
+
+                        new Chart("myChart4", {
+                            type: "bar",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    backgroundColor: barColors,
+                                    data: yValues
+                                }]
+                            },
+                            options: {
+                                legend: { display: false },
+                                title: {
+                                    display: true,
+                                    text: "Top 5 pizzas por cantidad"
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+                <div class="total-ordenes">
+                    <canvas id="myChart5"></canvas>
+                    <script>
+                        var xValues = ["Lasaña", "Pepperoni", "Pollo", "Mexicana", "Carnes"];
+                        var yValues = [80, 85, 75, 70, 65];
+                        var barColors = ["red", "green", "blue", "orange", "brown"];
+
+                        new Chart("myChart5", {
+                            type: "bar",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    backgroundColor: barColors,
+                                    data: yValues
+                                }]
+                            },
+                            options: {
+                                legend: { display: false },
+                                title: {
+                                    display: true,
+                                    text: "Top 5 pizzas por número de órdenes"
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+                <div class="peores-ventas">
+                    <canvas id="myChart6"></canvas>
+                    <script>
+                        var xValues = ["Vegetariana", "Hawaiana", "Champiñón", "Ranchera", "Maíz"];
+                        var yValues = [650000, 770000, 900000, 937500, 1040000];
+                        var barColors = ["red", "green", "blue", "orange", "brown"];
+
+                        new Chart("myChart6", {
+                            type: "bar",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    backgroundColor: barColors,
+                                    data: yValues
+                                }]
+                            },
+                            options: {
+                                legend: { display: false },
+                                title: {
+                                    display: true,
+                                    text: "Peores 5 pizzas por ventas"
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+                <div class="peores-cantidad">
+                    <canvas id="myChart7"></canvas>
+                    <script>
+                        var xValues = ["Vegetariana", "Hawaiana", "Champiñón", "Ranchera", "Maíz"];
+                        var yValues = [60, 70, 75, 75, 80];
+                        var barColors = ["red", "green", "blue", "orange", "brown"];
+
+                        new Chart("myChart7", {
+                            type: "bar",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    backgroundColor: barColors,
+                                    data: yValues
+                                }]
+                            },
+                            options: {
+                                legend: { display: false },
+                                title: {
+                                    display: true,
+                                    text: "Peores 5 pizzas por cantidad"
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+                <div class="peores-ordenes">
+                    <canvas id="myChart8"></canvas>
+                    <script>
+                        var xValues = ["Vegetariana", "Ranchera", "Champiñón", "Hawaiana", "Maíz"];
+                        var yValues = [45, 50, 50, 55, 60];
+                        var barColors = ["red", "green", "blue", "orange", "brown"];
+
+                        new Chart("myChart8", {
+                            type: "bar",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    backgroundColor: barColors,
+                                    data: yValues
+                                }]
+                            },
+                            options: {
+                                legend: { display: false },
+                                title: {
+                                    display: true,
+                                    text: "Peores 5 pizzas por número de órdenes"
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; La mejor pizzería paisa</p>
+    </footer>
+</body>
+
+</html>
